@@ -53,7 +53,8 @@ usvideos$release_weekday[1:5]
 ```
 
 ```{r}
-# Utilize liner regression models to learn the existence and strength of the correlations between: dependent variable: number of views, and independent variables: number of likes, number of dislikes, number of comments.
+# Utilize liner regression models to learn the existence and strength of the correlations between: 
+# dependent variable: number of views, and independent variables: number of likes, number of dislikes, number of comments.
 
 # Regression Model1: views VS. likes
 
@@ -101,7 +102,7 @@ ggplot(data=usvideos,aes(x=comment_count,y=views))+
 ```
 
 ```{r}
-# Model with many independent variables to verify the correlations and strengths 
+# Model with multi- independent variables to verify the correlations and strengths 
 
 model6 = lm(views~likes+dislikes+comment_count+release_time+release_weekday,data=usvideos)
 summary(model6)
